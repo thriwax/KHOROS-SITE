@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.main-page {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    max-width: 1280px;
+    margin: auto;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.podcasts {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.podcast-card {
+    margin-right: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+.podcasts-wrapper {
+    display: flex;
+    padding-bottom: 50px;
+    row-gap: 50px;
+}
+
+.podcast-card-title {
+    margin-top: 300px;
+    margin-left: 25px;
+}
+
+.about-text {
+    max-width: 600px;
+    font-size: 30px;
+}
+
+.about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.about-image {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+.hero-title {
+    position: absolute;
+    bottom: 25px;
+    z-index: 1;
+    left: 35px;
+    padding: 10px;
+    background: black;
+    color: white;
+    border-radius: 15px;
+
+    p {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+
+.swiper {
+    width: 1280px;
+    height: 697px;
+    border-radius: 25px;
+    background: #FFF;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    object-fit: cover;
+}
+
+.hero-title-wrapper {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    p {
+        font-size: 25px;
+        font-weight: 700;
+    }
+}
+
+.product-list-container {
+    overflow-x: auto;
+  }
+  
+  .product-list {
+    display: flex;
+    width: fit-content;
+    height: 430px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+  }
+
+
+.album-image {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+.albums-wrapper {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.album-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.podcasts-wrapper {
+    max-width: 1280px;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.swiper-button-next:after {
+    content: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='black'/%3E%3Cpath d='M31.8918 24.1056L20.9497 18.6346C20.1518 18.2356 19.2131 18.8158 19.2131 19.7079L19.2131 30.2922C19.2131 31.1842 20.1518 31.7644 20.9497 31.3655L31.8918 25.8945C32.6289 25.5259 32.6289 24.4741 31.8918 24.1056Z' fill='white' stroke='white' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    margin-right: 70px;
+}
+
+.swiper-button-prev:after {
+    content: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' transform='rotate(-180 25 25)' fill='black'/%3E%3Cpath d='M18.1082 25.8944L29.0503 31.3654C29.8482 31.7644 30.7869 31.1842 30.7869 30.2921L30.7869 19.7078C30.7869 18.8158 29.8482 18.2356 29.0503 18.6345L18.1082 24.1055C17.3711 24.4741 17.3711 25.5259 18.1082 25.8944Z' fill='white' stroke='white' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    margin-left: 70px;
+}
+
