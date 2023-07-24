@@ -1,0 +1,22 @@
+.navbar a {
+  font-size: 20px;
+}
+.navbar a.active {
+  font-weight: 800;
+}
+
+.navbar {
+  display: flex;
+  gap: 15px;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  .navbar {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 799px) {
+  .navbar {
+    display: none;
+  }
+}
