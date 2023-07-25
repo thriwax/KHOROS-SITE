@@ -40,19 +40,3 @@ export default Navbar;
 
 
 
-
-
-
-
-
-
-
-
-
-<div>
-                <a>HOME</a>
-                <a>DISCOGRAPHY</a>
-                <a>PODCASTS</a>
-                <a>ABOUT US</a>
-                <a>CONTACTS</a>
-            </div>
