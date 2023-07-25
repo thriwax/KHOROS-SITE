@@ -25,7 +25,7 @@ const PodcastPage = () => {
       <>
       <div className='podcast-page' key={mix?.id}>
         <div className='podcast-page-main-title'>Podcast #0{mix?.id}</div>
-        <Image src={mix?.img}  width={375} height={375} alt='' className='podcast-image-page'/>
+        <img src={mix?.img}  style={{width: '280px', height: '280px'}} alt='test' className='podcast-image-page'/>
         <h2 className='podcast-title-page'>{mix?.artist}</h2>
         <p className='podcast-review'>{mix?.review}</p>
         <ReactPlayer

@@ -24,7 +24,7 @@ const PodcastPage = () => {
     return (
       <>
       <div className='album-page'>
-        <div className='album-img'><Image width={375} height={375} src={release?.img} alt={release?.artist} className='album-image-page'/></div>
+        <div className='album-img'><img style={{width: '280px', height: '280px'}} src={release?.img} alt='image' className='album-image-page'/></div>
         <div className='album-info'>
             <h2 className='album-title-page'>{release?.artist}</h2>
             <p className='album-album-page'>{release?.album}</p>
