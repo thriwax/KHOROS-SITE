@@ -1,11 +1,9 @@
-import '../../styles/main.scss'
 import { useEffect, useState } from 'react';
 import { podcastT }from '../../types';
 import { useRouter } from 'next/router';
 import podcasts from '../../utils/podcasts';
 import Links from 'components/Links/Links';
 import ReactPlayer from "react-player";
-import Image from 'next/image';
 
 const PodcastPage = () => {
 

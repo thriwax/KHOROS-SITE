@@ -2,7 +2,6 @@ import Image from 'next/image';
 import slider from '../../utils/slider';
 import iconHero from '../../public/icon-hero.svg'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import '../../styles/main.scss'
 
 import 'swiper/css';
 import 'swiper/css/effect-fade';

@@ -1,9 +1,7 @@
-import '../../styles/main.scss'
 import { useEffect, useState } from 'react';
 import { albumT }from '../../types2';
 import { useRouter } from 'next/router';
 import albums from '../../utils/albums'
-import Image from 'next/image';
 import BandcampPlayer from 'components/BandcampPlayer/BandcampPlayer';
 import Links from 'components/Links/Links';
 

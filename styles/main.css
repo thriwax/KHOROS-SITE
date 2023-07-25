@@ -109,7 +109,7 @@ a {
 
 .podcast-card-title {
   position: absolute;
-  margin-top: 232px;
+  margin-top: 212px;
   margin-left: 15px;
 }
 
@@ -125,6 +125,7 @@ a {
   max-width: 1280px;
   margin: auto;
   flex-wrap: wrap;
+  padding-top: 80px;
 }
 
 .about-image {
@@ -342,6 +343,10 @@ a {
   display: none;
 }
 
+#px300 {
+  display: none;
+}
+
 .links-wrapper {
   display: flex;
   gap: 15px;
@@ -421,6 +426,7 @@ a {
   .about-wrapper {
     justify-content: center;
     gap: 50px;
+    padding-top: 35px;
   }
   .about-text {
     text-align: center;
@@ -463,5 +469,86 @@ a {
   }
   .about-text {
     text-align: center;
+  }
+  .album-review {
+    max-width: 500px;
+  }
+  .album-title-page {
+    text-align: center;
+  }
+  .album-album-page {
+    text-align: center;
+  }
+  .album-page {
+    gap: 20px;
+  }
+  .album-review {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 599px) {
+  .main-page, .podcasts-wrapper, .albums-wrapper, .header, .about-wrapper {
+    max-width: 280px;
+  }
+  .about-text {
+    width: 350px;
+  }
+  #px1440 {
+    display: none;
+  }
+  #px1280 {
+    display: none;
+  }
+  #px1024 {
+    display: none;
+  }
+  #px800 {
+    display: none;
+  }
+  #px600 {
+    display: none;
+  }
+  #px300 {
+    display: block;
+  }
+  .hero-title p {
+    font-size: 22px;
+  }
+  .product-list {
+    justify-content: center;
+  }
+  .podcasts h2 {
+    text-align: center;
+  }
+  .about-wrapper {
+    justify-content: center;
+    gap: 50px;
+  }
+  .about-text {
+    text-align: center;
+  }
+  .links-wrapper {
+    align-items: center;
+    flex-direction: column;
+  }
+  .hero-title {
+    left: 0;
+    bottom: -5px;
+    width: 260px;
+  }
+  .hero-title p {
+    font-size: 18px;
+  }
+  .about-wrapper {
+    padding-top: 35px;
+  }
+  .podcasts h2 {
+    font-size: 30px;
+  }
+  .about h2 {
+    font-size: 30px;
+  }
+  .about-text {
+    font-size: 24px;
   }
 }

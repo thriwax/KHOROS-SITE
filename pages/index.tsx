@@ -4,7 +4,6 @@ import ProductList from "../components/ProductList/ProductList";
 import Head from 'next/head'
 import About from "../components/About/About";
 import Links from "components/Links/Links";
-import "../styles/main.scss";
 
 const Home = () => {
     return (

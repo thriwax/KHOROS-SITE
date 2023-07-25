@@ -1,6 +1,5 @@
 import initPodcasts from "../../utils/podcasts";
 import PodcastCard from "../../UI/PodcastCard/PodcastCard";
-import Heading from "../../components/Heading/Heading";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import { podcastT }from '../../types';
