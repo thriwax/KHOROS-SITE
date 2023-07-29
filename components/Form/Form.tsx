@@ -6,7 +6,20 @@ function ContactForm() {
       return <p>Thanks for joining!</p>;
   }
   return (
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}  className='form'>
+      <label htmlFor="name">
+        Your Name
+      </label>  
+      <input
+        id="name"
+        type="name" 
+        name="name"
+      />
+      <ValidationError 
+        prefix="Name" 
+        field="name"
+        errors={state.errors}
+      />
       <label htmlFor="email">
         Email Address
       </label>
@@ -20,6 +33,22 @@ function ContactForm() {
         field="email"
         errors={state.errors}
       />
+      <label htmlFor="link">
+        Link
+      </label>  
+      <input
+        id="link"
+        type="link" 
+        name="link"
+      />
+      <ValidationError 
+        prefix="Link" 
+        field="link"
+        errors={state.errors}
+      />
+      <label htmlFor="message">
+        Message
+      </label> 
       <textarea
         id="message"
         name="message"

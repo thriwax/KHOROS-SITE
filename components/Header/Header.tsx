@@ -5,6 +5,7 @@ import Navbar from '../Navbar/Navbar';
 import logo from '../../public/khoros-logo.svg'
 import Link from "next/link";
 import { useState, useEffect } from 'react';
+import BurgerMenu from 'components/BurgerMenu/BurgerMenu';
 
 const Header = () => {
 
@@ -31,6 +32,7 @@ const Header = () => {
             <Link legacyBehavior href='/'><a><Image src={logo} width={157} height={53} alt='test'/></a></Link>
             {/* <div className='burger-menu' onClick={() => setOpen(!open)} style={width <= 600?{display: 'block'}:{display: 'none'}}>X</div> */}
             <Navbar />
+            <BurgerMenu />
         </div>
     )
 }
