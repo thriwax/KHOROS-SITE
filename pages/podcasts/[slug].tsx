@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { podcastT }from '../../types';
 import { useRouter } from 'next/router';
 import podcasts from '../../utils/podcasts';
-import Links from 'components/Links/Links';
+import LinksVertical from 'components/LinksVertical/LinksVertical';
 import ReactPlayer from "react-player";
 
 const PodcastPage = () => {
@@ -28,11 +28,11 @@ const PodcastPage = () => {
         <p className='podcast-review'>{mix?.review}</p>
         <ReactPlayer
         url={mix?.soundlink}
-        width={375}
+        width={280}
         height={450}
       />
       </div>
-      <Links />
+      <LinksVertical />
       </>
     );
   };

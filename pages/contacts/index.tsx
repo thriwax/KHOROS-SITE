@@ -1,4 +1,5 @@
 import Head from "next/head";
+import  Form   from '../../components/Form/Form';
 
 const Contacts = () => {
   return (
@@ -6,7 +7,7 @@ const Contacts = () => {
       <Head>
         <title>KHOROS - CONTACTS</title>
       </Head>
-      
+      <Form />
     </div>
   );
 };

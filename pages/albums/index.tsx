@@ -1,4 +1,3 @@
-import Heading from "../../components/Heading/Heading";
 import Head from "next/head";
 import albums from "../../utils/albums";
 import Image from 'next/image';

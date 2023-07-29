@@ -139,12 +139,17 @@ a {
 .podcasts-wrapper {
     display: flex;
     padding-top: 50px;
+    row-gap: 50px;
 }
 
 .podcast-card-title {
     position: absolute;
-    margin-top: 212px;
-    margin-left: 15px;
+    margin-top: 201px;
+    margin-left: 11px;
+    background: black;
+    color: white;
+    border-radius: 15px;
+    padding: 4px;
 }
 
 .about-text {
@@ -241,6 +246,7 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    row-gap: 50px;
 }
 
 .album-container {
@@ -306,8 +312,12 @@ a {
     width: 375px;
 }
 
+.russian {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .podcast-review {
-        width: 375px;
+    width: 280px;
     text-align: center;
     background: black;
     border-radius: 25px;
@@ -316,7 +326,7 @@ a {
     padding-bottom: 15px;
     margin-bottom: 50px;
     margin-top: 20px;
-
+    font-size: 18px;
 }
 
 .podcast-title-page {
@@ -349,6 +359,7 @@ a {
     border-radius: 15px;
     margin-top: 15px;
     margin-bottom: 30px;
+    font-family: Montserrat;
 }
 
 .album-image-page {
@@ -371,6 +382,11 @@ a {
   
 
   }
+
+#inner-links {
+    flex-direction: column;
+    align-items: center;
+}
 
 #px1280 {
     display: none;
@@ -536,6 +552,15 @@ a {
     .album-review {
         text-align: center;
     }
+
+    .podcasts-wrapper {
+
+
+        justify-content: center;
+    }
+    .albums-wrapper {
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width: 300px) and (max-width: 599px)  {
@@ -608,5 +633,23 @@ a {
     }
     .about-text {
         font-size: 24px;
+    }
+    .album-review {
+        max-width: 250px;
+        text-align: center;
+        margin: auto;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .album-title-page, .album-album-page {
+        text-align: center;
+    }
+    .album-album-page {
+        font-size: 28px;
+        padding-bottom: 25px;
+    }
+    .album-title-page {
+        font-size: 25px;
+        
     }
 }
