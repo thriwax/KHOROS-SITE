@@ -1,13 +1,18 @@
 import { useForm, ValidationError } from '@formspree/react';
+import Image from 'next/image';
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("xpzgqzjn");
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+      return <>
+      <p className='final-result'>Thanks for joining!</p>
+      <Image src='https://liubavyshka.ru/_ph/19/2/661270935.gif' alt='gif' width={150} height={150} id='prikol'/>
+      </>;
   }
   return (
       <form onSubmit={handleSubmit}  className='form'>
-      <label htmlFor="name">
+      <p>Proposal Form</p>
+      <label htmlFor="name" className='label-form'>
         Your Name
       </label>  
       <input
@@ -20,8 +25,8 @@ function ContactForm() {
         field="name"
         errors={state.errors}
       />
-      <label htmlFor="email">
-        Email Address
+      <label htmlFor="email" className='label-form'>
+        Email
       </label>
       <input
         id="email"
@@ -33,7 +38,7 @@ function ContactForm() {
         field="email"
         errors={state.errors}
       />
-      <label htmlFor="link">
+      <label htmlFor="link" className='label-form'>
         Link
       </label>  
       <input
@@ -46,7 +51,7 @@ function ContactForm() {
         field="link"
         errors={state.errors}
       />
-      <label htmlFor="message">
+      <label htmlFor="message" className='label-form'>
         Message
       </label> 
       <textarea
@@ -58,7 +63,7 @@ function ContactForm() {
         field="message"
         errors={state.errors}
       />
-      <button type="submit" disabled={state.submitting}>
+      <button type="submit" disabled={state.submitting} id='button-s'>
         Submit
       </button>
     </form>

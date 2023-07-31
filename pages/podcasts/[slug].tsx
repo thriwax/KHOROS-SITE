@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import podcasts from '../../utils/podcasts';
 import LinksVertical from 'components/LinksVertical/LinksVertical';
 import ReactPlayer from "react-player";
+import Head from 'next/head';
 
 const PodcastPage = () => {
 
@@ -21,6 +22,9 @@ const PodcastPage = () => {
     
     return (
       <>
+      <Head>
+        <title>KHOROS PODCAST: {mix?.artist} - #0{mix?.id}</title>
+      </Head>
       <div className='podcast-page' key={mix?.id}>
         <div className='podcast-page-main-title'>Podcast #0{mix?.id}</div>
         <img src={mix?.img}  style={{width: '280px', height: '280px'}} alt='test' className='podcast-image-page'/>

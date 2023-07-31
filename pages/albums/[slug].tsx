@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import albums from '../../utils/albums'
 import BandcampPlayer from 'components/BandcampPlayer/BandcampPlayer';
 import Links from 'components/Links/Links';
+import Head  from 'next/head';
 
 const PodcastPage = () => {
 
@@ -21,6 +22,9 @@ const PodcastPage = () => {
     
     return (
       <>
+      <Head>
+        <title>KHOROS: {release?.artist} - {release?.album}</title>
+      </Head>
       <div className='album-page'>
         <div className='album-img'><img style={{width: '280px', height: '280px'}} src={release?.img} alt='image' className='album-image-page'/></div>
         <div className='album-info'>
