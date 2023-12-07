@@ -2,6 +2,13 @@ import { podcastT } from "types";
 
 const podcasts:podcastT[] = [
     {
+        id: "4",
+        artist: 'Danil Inyushkin',
+        review: 'Danil Inyushkin is a side project of Werfol - a DJ and producer from Bagrationovsk. In this project Danil is focused on producing cinematic ambient music because he is eager to experiment and wants to develop in various directions.',
+        img: 'https://i.ibb.co/fS2MXCb/artworks-7-Fg-Aq-Eknu-T0mm-NMe-OCD42g-t500x500.jpg',
+        soundlink: 'https://soundcloud.com/khoroslabel/khoros-podcast-4-danil-inyushkin?in=khoroslabel/sets/khoros-podcasts-series'
+    },
+    {
         id: "3",
         artist: 'Obi Uto',
         review: 'Half an hour of algorithmic experimental music from the curator of the Detox Radio project.',
